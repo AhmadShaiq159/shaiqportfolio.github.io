@@ -303,7 +303,7 @@ body {
         border-right: 0.4rem solid var(--main-color);
         background: #fffbf9;
         width: 35rem;
-        animation: goLeft 1.5s ease forwards;
+        animation: goLeft 1s ease forwards;
     }
 
     .hamburger i{
