@@ -9,10 +9,19 @@ var typed = new Typed('.typed', {
 
 
 // ======hamburger========
-const nav = document.querySelector('.nav');
-const hamburger = document.querySelector('.hamburger');
+myFunction = () => {
+  var nav = document.querySelector('.nav');
+  if (nav.style.display == 'flex') {
+    nav.style.display = 'none';
+  }
+  else {
+    nav.style.display = 'flex';
+  }
+}
 
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('hamnav');
-});
+// ===========menu=========
+var open = document.querySelector('.bx-menu');
+open.onclick = () => {
+  open.classList.toggle('bx-x');
+}
 

@@ -52,7 +52,6 @@ body {
     align-items: center;
     right: 3.5rem;
     position: absolute;
-    transition: 0.3s ease-in-out;
 }
 
 .nav li {
@@ -283,7 +282,7 @@ body {
 
     100% {
         opacity: 1;
-        transform: translatex(0px); 
+        transform: translatex(0px);
     }
 }
 
@@ -294,7 +293,7 @@ body {
 @media (max-width: 990px) {
 
     .nav {
-        display: flex;
+        display: none;
         flex-direction: column;
         left: -0.9rem;
         top: 10rem;
@@ -303,17 +302,14 @@ body {
         border-bottom: 0.4rem solid var(--main-color);
         border-right: 0.4rem solid var(--main-color);
         background: #fffbf9;
-        width: 20rem;
+        width: 35rem;
+        animation: goLeft 1.5s ease forwards;
     }
 
-    .hamburger i {
+    .hamburger i{
         display: flex;
         order: 2;
-    }
-
-    .hamnav {
-        opacity: 0;
-        height: 0rem;
+        transform: rotate(180deg);
     }
 
     #navigation h1 {
